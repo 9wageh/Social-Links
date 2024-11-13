@@ -1,0 +1,168 @@
+/* Start Variables */
+:root {
+    --first-color: hsl(75, 94%, 57%);
+    --secondry-color: hsl(0, 0%, 100%);
+    --third-color: hsl(0, 0%, 20%);
+    --four-color: hsl(0, 0%, 12%);
+    --five-color: hsl(0, 0%, 8%);
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--five-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondry-color);
+}
+
+
+
+/* End Global Rules */
+
+/* Code Start */
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--third-color);
+    padding: 25px 30px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.image,
+.title,
+.work {
+    text-align: center;
+}
+
+.image img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 80px;
+    margin-bottom: 25px;
+
+}
+
+.title h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--secondry-color);
+    margin-bottom: 10px;
+}
+
+.title p {
+    color: var(--first-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.work p {
+    color: var(--secondry-color);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links a {
+    width: 300px;
+    padding: 15px 0;
+    background-color: var(--four-color);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+
+.links a:hover {
+    background-color: var(--first-color);
+}
+
+/* Code End */
+
+/* Small  */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+/* Medium Phones*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: auto;
+
+    }
+}
+
+/* Laptop to PC */
+@media (min-width: 1024px) {
+    .container {
+        width: auto;
+
+    }
+}
+
+/* Computer */
+@media (min-width: 1200px) {
+    .container {
+        width: auto;
+    }
+}
+
+/* Responsive End */
